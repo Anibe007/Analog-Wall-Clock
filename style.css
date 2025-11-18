@@ -80,20 +80,21 @@ body.glow .clock {
     font-size: 24px;
     font-weight: bold;
     color: inherit;
+    position: absolute;
 }
 
 .num12 { top: 12px; left: 50%; transform: translateX(-50%); }
-.num1 { top: 45px; right: 75px; }
-.num2 { top: 95px; right: 38px; }
+.num1 { top: 23px; right: 75px; }
+.num2 { top: 70px; right: 38px; }
 .num3 { top: 50%; right: 12px; transform: translateY(-50%); }
-.num4 { bottom: 95px; right: 38px; }
-.num5 { bottom: 45px; right: 75px; }
+.num4 { bottom: 70px; right: 25px; }
+.num5 { bottom: 20px; right: 75px; }
 .num6 { bottom: 12px; left: 50%; transform: translateX(-50%); }
-.num7 { bottom: 45px; left: 75px; }
-.num8 { bottom: 95px; left: 38px; }
+.num7 { bottom: 25px; left: 75px; }
+.num8 { bottom: 70px; left: 25px; }
 .num9 { top: 50%; left: 12px; transform: translateY(-50%); }
-.num10 { top: 95px; left: 38px; }
-.num11 { top: 45px; left: 75px; }
+.num10 { top: 70px; left: 30px; }
+.num11 { top: 30px; left: 75px; }
 
 .center-dot {
     position: absolute;
@@ -151,4 +152,15 @@ body.purple { background: #f0d4ff; color: #5e0e82; }
     .hour { height: 70px; }
     .minute { height: 95px; }
     .second { height: 110px; }
+
+    .num1 {top: 20px; right: 60px;}
+    .num2 {top: 55px; right: 20px;}
+    .num4 {top: 160px; right: 20px;}
+    .num5 {bottom: px; right: 60px;}
+    .num7 {bottom: px; left: 62px;}
+    .num8 {top: 150px; left: 20px;}
+    .num10 {top: 60px; left: 20px;}
+    .num11 {top: 25px; left: 55px;}
+
+    /* .num1, .num2, .num4, .num5, .num7, .num8, .num10, .num11 { display: none;}  */
 }
