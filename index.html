@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Analog Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2 class="fade">Premium Analog Clock ⏱️</h2>
+
+    <!-- Theme Buttons -->
+    <div class="theme-buttons fade">
+        <button data-theme="light">Light</button>
+        <button data-theme="dark">Dark</button>
+        <button data-theme="gold">Gold</button>
+        <button data-theme="blue">Blue</button>
+        <button data-theme="purple">Purple</button>
+    </div>
+
+    <!-- Sound Toggle -->
+    <button id="soundToggle" class="sound-btn fade">🔈 Sound: OFF</button>
+
+    <div class="clock fade">
+
+        <!-- Numbers -->
+        <div class="number num1">1</div>
+        <div class="number num2">2</div>
+        <div class="number num3">3</div>
+        <div class="number num4">4</div>
+        <div class="number num5">5</div>
+        <div class="number num6">6</div>
+        <div class="number num7">7</div>
+        <div class="number num8">8</div>
+        <div class="number num9">9</div>
+        <div class="number num10">10</div>
+        <div class="number num11">11</div>
+        <div class="number num12">12</div>
+
+        <div class="center-dot"></div>
+
+        <!-- Hands -->
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="hand second"></div>
+
+    </div>
+
+    <!-- Date & digital time -->
+    <div class="date-time fade">
+        <p id="date"></p>
+        <p id="digital"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

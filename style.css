@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e7e7e7;
+    transition: 0.5s;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* Theme Buttons */
+.theme-buttons button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #333;
+    color: white;
+    transition: 0.3s;
+}
+.theme-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.sound-btn {
+    margin-top: 10px;
+    background: crimson;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.clock {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 25px auto;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    border: 10px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 35px rgba(0,0,0,0.25), inset 0 0 10px rgba(255,255,255,0.4);
+}
+
+/* Glow effect */
+body.glow .clock {
+    box-shadow: 0 0 60px rgba(0,255,255,0.6), 0 0 25px rgba(255,255,255,0.2);
+}
+
+/* Numbers */
+.number {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.num12 { top: 12px; left: 50%; transform: translateX(-50%); }
+.num1 { top: 45px; right: 75px; }
+.num2 { top: 95px; right: 38px; }
+.num3 { top: 50%; right: 12px; transform: translateY(-50%); }
+.num4 { bottom: 95px; right: 38px; }
+.num5 { bottom: 45px; right: 75px; }
+.num6 { bottom: 12px; left: 50%; transform: translateX(-50%); }
+.num7 { bottom: 45px; left: 75px; }
+.num8 { bottom: 95px; left: 38px; }
+.num9 { top: 50%; left: 12px; transform: translateY(-50%); }
+.num10 { top: 95px; left: 38px; }
+.num11 { top: 45px; left: 75px; }
+
+.center-dot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: crimson;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hands */
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -100%) rotate(0deg);
+    border-radius: 5px;
+}
+
+.hour {
+    width: 8px;
+    height: 85px;
+    background: #111;
+}
+.minute {
+    width: 5px;
+    height: 115px;
+    background: #444;
+}
+.second {
+    width: 2px;
+    height: 135px;
+    background: crimson;
+}
+
+/* Date & digital time */
+.date-time p {
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+/* Themes */
+body.dark { background: #121212; color: white; }
+body.gold { background: #f7e69f; color: #8a6a0a; }
+body.blue { background: #cce7ff; color: #004b8d; }
+body.purple { background: #f0d4ff; color: #5e0e82; }
+
+/* Responsive */
+@media (max-width: 500px) {
+    .clock { width: 250px; height: 250px; }
+    .number { font-size: 18px; }
+    .hour { height: 70px; }
+    .minute { height: 95px; }
+    .second { height: 110px; }
+}
